@@ -1,0 +1,17 @@
+.form-card { width: 100%; background: var(--card-light); border: 1px solid var(--border-light); border-radius: 16px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.04); margin-bottom: 1.5rem; }
+body.dark .form-card { background: var(--card-dark); border: 1px solid var(--border-dark); }
+.form-group { margin-bottom: 1.25rem; }
+.form-group:last-child { margin-bottom: 0; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 0.5rem; color: var(--text-secondary-light); }
+body.dark .form-group label { color: var(--text-secondary-dark); }
+.form-group input, .form-group select { width: 100%; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--border-light); background: var(--input-bg-light); font-size: 1rem; color: var(--text-primary-light); }
+body.dark .form-group input, body.dark .form-group select { border: 1px solid var(--border-dark); background: var(--input-bg-dark); color: var(--text-primary-dark); }
+.form-group input:focus, .form-group select:focus { outline: none; border-color: var(--accent1); box-shadow: 0 0 0 3px rgba(111, 99, 255, 0.2); }
+.mini-row { display: flex; gap: 1rem; }
+.radio-group { display: flex; gap: 1.5rem; margin-top: 0.5rem; }
+.radio-group label { display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--text-primary-light); }
+body.dark .radio-group label { color: var(--text-primary-dark); }
+.radio-group input[type="radio"] { accent-color: var(--accent1); }
+.cta-btn { width: 100%; margin-top: 1rem; padding: 0.85rem; border: none; border-radius: 8px; background: linear-gradient(90deg, var(--accent1), var(--accent2)); color: white; font-size: 1.1rem; font-weight: 700; cursor: pointer; }
+.result-card { width: 100%; background: var(--card-light); border: 1px solid var(--border-light); border-radius: 16px; padding: 1.5rem; text-align: center; line-height: 1.6; }
+body.dark .result-card { background: var(--card-dark); border: 1px solid var(--border-dark); }

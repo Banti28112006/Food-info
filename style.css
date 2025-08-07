@@ -1,0 +1,29 @@
+:root {
+    --accent1: #6f63ff;
+    --accent2: #1ed9b8;
+    --bg-light: #f4f7fa;
+    --bg-dark: #1a1d2e;
+    --card-light: #ffffff;
+    --card-dark: #262a45;
+    --text-primary-light: #1c2540;
+    --text-secondary-light: #5a648a;
+    --text-primary-dark: #e8eefc;
+    --text-secondary-dark: #a8b2d3;
+    --border-light: #e8eefc;
+    --border-dark: #3c4364;
+    --input-bg-light: #f5f8fc;
+    --input-bg-dark: #222741;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { font-family: 'Inter', sans-serif; background: var(--bg-light); color: var(--text-primary-light); transition: background 0.25s, color 0.25s; -webkit-tap-highlight-color: transparent; }
+body.dark { background: var(--bg-dark); color: var(--text-primary-dark); }
+.container { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 480px; min-height: 100vh; padding: 2rem 1rem; margin: 0 auto; }
+.logo { width: 60px; height: 60px; margin-bottom: 1rem; }
+.theme-toggle { position: absolute; top: 1.5rem; right: 1.5rem; width: 2.75rem; height: 2.75rem; border-radius: 50%; border: none; background: #e9eafc; color: var(--accent1); font-size: 1.25rem; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s, transform 0.2s; }
+body.dark .theme-toggle { background: #394061; color: #ffe87a; }
+.theme-toggle:active { transform: scale(0.9); }
+.back-btn { position: absolute; top: 1.5rem; left: 1.5rem; padding: 0.5rem 0.75rem; text-decoration: none; font-weight: 600; color: var(--accent1); background: #e9eafc; border-radius: 8px; transition: background 0.2s; }
+body.dark .back-btn { background: #394061; }
+.page-title, .hub-title { font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; text-align: center; color: var(--text-primary-light); }
+body.dark .page-title, body.dark .hub-title { color: var(--text-primary-dark); }
+@media (max-width: 600px) { .container { padding: 4rem 1rem 2rem 1rem; } .page-title, .hub-title { font-size: 1.5rem; } .theme-toggle, .back-btn { top: 1rem; } .theme-toggle { right: 1rem; } .back-btn { left: 1rem; } }

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Info | NutriPlatform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="foodinfo.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" aria-label="Switch Theme" onclick="toggleTheme()">🌙</button>
+        <a href="index.html" class="back-btn">← Home</a>
+        <img src="logo.png" class="logo" alt="App Logo">
+        <h1 class="page-title">🍎 Food Info</h1>
+        <div class="form-card">
+            <div class="language-switcher">
+                <label for="lang-select">Language:</label>
+                <select id="lang-select">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी (Hindi)</option>
+                    <option value="mr">मराठी (Marathi)</option>
+                </select>
+            </div>
+            <label for="foodInput">Search Food</label>
+            <div class="animated-searchbox">
+                <input type="text" id="foodInput" placeholder="Type a food name..." autocomplete="off">
+                <button type="button" class="search-btn-anim" onclick="searchFood()">
+                    <span class="search-ico">🔍</span>
+                </button>
+            </div>
+            <div id="suggestList" class="suggestion-list"></div>
+        </div>
+        <div id="foodResult" class="result-card" style="display:none;"></div>
+    </div>
+    
+    <!-- Scripts at the end of the body -->
+    <script src="main.js"></script>
+
+    <!-- IMPORTANT: Load the new combined database file BEFORE foodinfo.js -->
+    <script src="all_databases.js"></script>
+    
+    <!-- This script uses the data from the file above -->
+    <script src="foodinfo.js"></script>
+</body>
+</html>

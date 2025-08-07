@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hydration Tracker | NutriPlatform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hydrate.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" aria-label="Switch Theme" onclick="toggleTheme()">🌙</button>
+        <a href="index.html" class="back-btn">← Home</a>
+        <img src="logo.png" class="logo" alt="App Logo">
+        <h1 class="page-title">💧 Hydration Tracker</h1>
+        <div class="tracker-card">
+            <div id="trackerProgress"></div>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar" id="trackerBar"></div>
+            </div>
+            <div class="tracker-buttons">
+                <button onclick="addWater(0.25)">+250 ml</button>
+                <button onclick="addWater(0.5)">+500 ml</button>
+                <button onclick="addWater(1)">+1 L</button>
+                <button class="reset-btn" onclick="resetWater()">⟳</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    <script src="hydrate.js"></script>
+</body>
+</html>
